@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 
-class Ebayc extends Component {
+class Paypalc extends Component {
   render() {
     return (
-      <div className="ebay-calc-container">
-        <h1>ebay</h1>
-        <form action="" className="ebay-calculator" onChange={(e)=>this.props.ebayCalc(e)}>
+      <div className="paypal-calc-container">
+        <h1>paypal</h1>
+        <form action="" className="paypal-calculator"
+          onChange={(e)=>this.props.paypalCalc(e)}>
           <div>
             <label>Sale cost</label>
             <input type="number" className="sale-cost"/>
@@ -23,14 +24,6 @@ class Ebayc extends Component {
             <input className="shipping-cost"/>
           </div>
           <div>
-            <label>Ship Fee</label>
-            <input value={this.props.shippingFee} disabled/>
-          </div>
-          <div>
-            <label>Ebay Fee</label>
-            <input value={this.props.ebayFee} disabled/>
-          </div>
-          <div>
             <label>Paypal Fee</label>
             <input value={this.props.paypalFee} disabled/>
           </div>
@@ -40,11 +33,11 @@ class Ebayc extends Component {
           </div>
           <div>
             <label>Purchase</label>
-            <input type="number" className="purchase-price"/>
+            <input />
           </div>
           <div>
             <label>Profit</label>
-            <input value={this.props.profit} disabled/>
+            <input disabled/>
           </div>
         </form>
       </div>
@@ -52,4 +45,4 @@ class Ebayc extends Component {
   }
 }
 
-export default Ebayc;
+export default Paypalc;

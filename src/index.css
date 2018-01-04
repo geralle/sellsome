@@ -4,6 +4,11 @@ body {
   font-family: sans-serif;
 }
 
+.logo{
+  height: auto;
+  width: 15%;
+}
+
 .ebay-calculator{
   display: flex;
   flex-direction: column;
